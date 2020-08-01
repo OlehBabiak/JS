@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu.hidden ul{
+            display: none;
+        }
+        .menu .title {
+            padding-left: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            position:relative;
+        }
+        tr td {
+            border: 2px solid black;
+        }
+        .inputDiv{
+            padding: 5px;
+        }
+        #filterObj{
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 2px;
+            width: 30%;
+        }
+    </style>
+
+</head>
+<body>
+<div id='text'><p>Good morning</p></div>
+<button id="button">remove text</button>
+<p>----------------------------------------------------------------</p>
+
+<form action="">
+    <p><b>Enter your age:</b><br>
+    <input id="input" type="text">
+</form>
+<button id="buttonAge">Enter</button>
+
+
+<p>----------------------------------------------------------------</p>
+<div class="menu cars">
+    <h2 class="title">Меню авто (тисни тут)</h2>
+    <ul>
+        <li>Renault</li>
+        <li>Peugeot</li>
+        <li>Citroen</li>
+    </ul>
+</div>
+<p>----------------------------------------------------------------</p>
+
+<div>
+<form action="" id="form" name="myForm1">
+    <p><b>Enter your Name:</b><br>
+        <input type="text" name='userName'>
+    <p><b>Enter your Surname:</b><br>
+        <input type="text" name='userSurname'>
+</form>
+</br>
+<form action="" id="form2" name="myForm2">
+    <p><b>Enter your age:</b><br>
+        <input type="number" name='userAge'>
+    <p><b>Enter your phone number:</b><br>
+        <input type="tel" name='userPhone'>
+</form>
+</div>
+
+<button id="buttonForms">Send</button>
+
+
+
+
+
+<div id="xxx"></div>
+<p>----------------------------------------------------------------</p>
+<div id="tableMain">
+<form action="" id="form3" name="3">
+    <p><b>Enter row:</b><br>
+        <input type="number" name='row'>
+    <p><b>Enter column:</b><br>
+        <input type="number" name='column'>
+    <p><b>Enter element:</b><br>
+        <input type="text" name='element'>
+</form>
+<button id="buttonForms3">Send</button>
+
+</div>
+<p>----------------------------------------------------------------</p>
+
+<input id="bedWords" type="text" name='words'>
+<button id="buttonBedWords">Check</button>
+
+
+<p>----------------------------------------------------------------</p>
+
+<div>
+    <div id = 'filterObj'></div>
+    <form action="" id="objForm" name="users">
+        <div class="inputDiv">
+    <label><input type="checkbox" name="status">Фільтр по статусу</label>
+        </div>
+        <br>
+        <div class="inputDiv">
+            <label><input type="checkbox" name="age">Фільтр по віку</label>
+        </div>
+        <br>
+        <div class="inputDiv">
+            <label><input type="checkbox" name="city">Фільтр по місту</label>
+        </div>
+        <br>
+    </form>
+    <button id="checkFilter">Check</button>
+</div>
+
+<script src="scriptEvents.js"></script>
+</body>
+</html>
+
