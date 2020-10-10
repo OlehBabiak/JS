@@ -418,3 +418,4 @@ Nastya.hobby()
 // 	// console.log(result);
 // })
 
+//Greet
